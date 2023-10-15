@@ -1,14 +1,14 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
- puts("\"Programming is like building a multilingual puzzle");
- return 0;
-}
+	/* Use puts to print the message with a newline */
+	puts("Programming is like building a multilingual puzzle");
 
-/*
- * main - Prints "Programming is like building a multilingual
- *                puzzle, followed by a new line.
- *
- * Return: Always 0.
- */
+	return (0);
+}
