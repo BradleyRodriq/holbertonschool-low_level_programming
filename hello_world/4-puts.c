@@ -8,7 +8,7 @@
 int main(void)
 {
 	/* Use puts to print the message with a newline */
-	puts("Programming is like building a multilingual puzzle");
+	puts("\"Programming is like building a multilingual puzzle");
 
 	return (0);
 }
