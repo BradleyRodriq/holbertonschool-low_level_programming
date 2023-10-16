@@ -1,16 +1,16 @@
-#include <stdlib.h>
-#include <time.h>
+#include <unistd.h>
 
+/**
+ * main - Prints "and that piece of art is useful" - Dora Korpar, 2015-10-19",
+ *                followed by a new line, to standard error.
+ *
+ * Return: Always 1.
+ */
 int main(void)
 {
-	int n;
+	write(2,
+	      "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",
+	      59);
 
-	strand(time(0));
-	n=rand(0) - RAND_MAX / 2;
-	if (n > 0)
-		printf ("$n is positive");
-	else if (n==)
-		printf ("$n is zero");
-	else
-		printf("$n is negative");
-	return (0);
+	return (1);
+}
