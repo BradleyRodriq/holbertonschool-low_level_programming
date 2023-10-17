@@ -7,16 +7,17 @@
 int main(void)
 {
 	int n;
-	int ld;
+	int last;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	last = n % 10;
 	/* your code goes there */
-		if (n > 5)
-			printf("the string and is greater than 5\n")
-		else if (n = 0)
-			printf("the string and is 0\n")
-		else if (n < 6)
-			printf("the string and is less than 6 and not 0\n")	
+		if (last > 5)
+			printf("and is greater than 5\n");
+		else if (last == 0)
+			printf("and is 0\n");
+		else if (last < 6)
+			printf("and is less than 6 and not 0\n");	
 	return (0);
 }
