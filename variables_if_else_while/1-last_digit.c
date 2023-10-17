@@ -6,6 +6,7 @@
 /* betty style doc for function main goes there */
 /**
  * main-function
+ *
  * return: always 0
  */
 int main(void)
