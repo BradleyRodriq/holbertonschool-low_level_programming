@@ -6,13 +6,13 @@
  * Return: always 0
  */
 
-int main (void)
+int main(void)
 {
-	int  n;
+	int n;
+
 	n = 0;
-	
 	while (n < 10)
-	{	
+	{
 	printf("%d", n);
 	n++;
 	}
