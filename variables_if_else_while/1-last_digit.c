@@ -5,10 +5,8 @@
 
 /* betty style doc for function main goes there */
 /**
- * prints last digit
- * @n: random number
- * @ld last number
- * return: 0
+ * main-function
+ * return: always 0
  */
 int main(void)
 {
