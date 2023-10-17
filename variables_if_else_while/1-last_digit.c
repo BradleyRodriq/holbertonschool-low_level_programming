@@ -4,6 +4,12 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+/**
+ * prints last digit
+ * @n: random number
+ * @ld last number
+ * return: 0
+ */
 int main(void)
 {
 	int n;
