@@ -19,12 +19,14 @@ int main(void)
 		putchar(lowercase);
 		lowercase++;
 	}
-	{
-	while (uppercase <=);
+	while (uppercase <= 'Z')
 	{
 		putchar(uppercase);
 		uppercase++;
-
+	}
 	putchar('\n');
 	return (0);
 }
+
+
+
