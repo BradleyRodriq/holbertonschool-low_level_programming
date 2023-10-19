@@ -3,23 +3,23 @@
 #include <unistd.h>
 
 /**
- * jack_bauer
- * Return:
+ * jack_bauer - prints time from 00:00 to 23:59
+ * Return: time
  */
 void jack_bauer(void)
 {
-	int hour,minute;
+	int hour, minute;
 
-    for (hour = 0; hour < 24; hour++) 
+	for (hour = 0; hour < 24; hour++)
 	{
-        for (minute = 0; minute < 60; minute++) 
+		for (minute = 0; minute < 60; minute++)
 		{
-            _putchar((hour / 10) + '0');
-            _putchar((hour % 10) + '0');
-            _putchar(':');
-            _putchar((minute / 10) + '0');
-            _putchar((minute % 10) + '0');
-            _putchar('\n');
-        }
-    }
+			_putchar((hour / 10) + '0');
+			_putchar((hour % 10) + '0');
+			_putchar(':');
+			_putchar((minute / 10) + '0');
+			_putchar((minute % 10) + '0');
+			_putchar('\n');
+		}
+	}
 }
