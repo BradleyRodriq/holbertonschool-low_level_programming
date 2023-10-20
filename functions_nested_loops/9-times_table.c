@@ -15,22 +15,19 @@ void times_table(void)
 		{
 			if (b * m > 9)
 			{
-			_putchar (b * m / 10 + '0');
-			_putchar (b * m % 10 + '0');
+				_putchar (b * m / 10 + '0');
+				_putchar (b * m % 10 + '0');
 			}
 			else
 			{
+				_putchar (' ');
 				_putchar (b * m  + '0');
 			}
-		if (m != 9)
-		{
-			_putchar (',');
-			_putchar (' ');
-		}
-		if (b * m < 10)
-		{
-			_putchar (' ');
-		}
+			if (m != 9)
+			{
+				_putchar (',');
+				_putchar (' ');
+			}
 		}
 		_putchar ('\n');
 	}
