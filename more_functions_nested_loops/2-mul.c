@@ -4,7 +4,8 @@
  * mul - multiplies two integers
  * @a - first operand
  * @b - first operand
- * Return: multiplication
+ *
+ * Return: product
  */
 int mul(int a, int b)
 
