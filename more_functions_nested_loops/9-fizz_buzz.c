@@ -2,7 +2,7 @@
 
 /**
  * main - prints numbers 1-100 but for multiples of 3
- *it prints fizz instead, and for fives says buzz, 
+ *it prints fizz instead, and for fives says buzz,
  * fizzbuzz for both
  *
  * Return: Always 0.
