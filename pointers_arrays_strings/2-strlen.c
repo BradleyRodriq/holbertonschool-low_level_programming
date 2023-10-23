@@ -2,7 +2,7 @@
 /**
  *_strlen - prints the length of a string
  *@s: string to be counted
- *@i: variables to count strings
+ *Return: length of string
  */
 int _strlen(char *s)
 
