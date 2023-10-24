@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_rev - a function that takes a pointer to an int as parameter and
- * @s: chaine of caractere
+ * print_rev - prints a string in reverse
+ * @s: string to check
  *
- * Return: 1 or 0
+ * Return: reversed string
  */
 
 void print_rev(char *s)
