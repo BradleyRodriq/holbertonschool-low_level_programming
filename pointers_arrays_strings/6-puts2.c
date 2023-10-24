@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _puts - prints every two lines of string
+ * puts2 - prints every two lines of string
  * @str: string to be printed every two lines
  */
 
@@ -11,12 +11,12 @@ void puts2(char *str)
 	l = 0;
 
 	while (str[l] != '\0')
-		{
-			l++;
-		}
+	{
+		l++;
+	}
 	for (i = 0; i < l; i += 2)
 	{
-		_putchar (str[i]);
+		_putchar(str[i]);
 	}
 	_putchar('\n');
 }
