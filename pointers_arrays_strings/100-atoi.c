@@ -31,6 +31,7 @@ int _atoi(char *s)
 		{
 			dgt = s[i] - '0';
 			if (d % 2)
+
 				dgt = -dgt;
 			n = n * 10 + dgt;
 			f = 1;
@@ -44,5 +45,3 @@ int _atoi(char *s)
 		return (0);
 	return (n);
 }
-
-
