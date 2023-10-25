@@ -4,6 +4,7 @@
  * _strcat - merges two strings together
  * @dest: the base merge string
  * @src: the string to be merged into dest
+ * Return: merged string
  */
 char *_strcat(char *dest, char *src)
 {
