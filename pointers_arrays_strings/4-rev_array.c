@@ -22,7 +22,7 @@ void reverse_array(int *a, int n)
 
 	while (i < j)
 
-	while (a[i] < a[js])
+	while (i <= js)
 	{
 		temp = a[i];
 		a[i] = a[j];
