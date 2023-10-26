@@ -13,20 +13,21 @@ void reverse_array(int *a, int n)
 {
 	int i;
 	int j;
+	int js;
 	int temp;
 
 	j = n - 1;
+	js = j / 2;
 	i = 0;
 
 	while (i < j)
 
-	while (a[i] > a[j])
+	while (a[i] > a[js])
 	{
 		temp = a[i];
 		a[i] = a[j];
 		a[j] = temp;
-
 		i++;
-		j++;
+		j--;
 	}
 }
