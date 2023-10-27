@@ -1,6 +1,9 @@
 #include "main.h"
 /**
+ * leet - changes string chars to leet counterpart
  *
+ * @str: string to be converted
+ * Return: converted string
  */
 char *leet(char *str)
 {
@@ -17,5 +20,5 @@ char *leet(char *str)
 		}
 		i++;
 	}
-	return(str);
+	return (str);
 }
