@@ -5,7 +5,7 @@
  * @y: power
  * Return: 1 or -1 on error
  */
-int _pow_recursion (int x, int y)
+int _pow_recursion(int x, int y)
 {
 	if (y < 0)
 		return (-1);
