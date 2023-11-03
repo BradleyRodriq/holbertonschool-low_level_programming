@@ -11,17 +11,16 @@ int main(int argc, char **argv)
 	int produce;
 	int a;
 	int b;
-	int x;
+	int x = 0;
 
 	if (argc != 3)
 	{
 		printf("Error\n");
 		x = 1;
 	}
-
+	else
 	a = atoi(argv[1]);
 	b = atoi(argv[2]);
-
 	produce = a * b;
 	{
 		printf("%d\n", produce);
