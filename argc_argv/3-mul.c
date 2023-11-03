@@ -15,6 +15,7 @@ int main(int argc, char **argv)
 	if (argc != 3)
 	{
 		printf("Error\n");
+		b = 1;
 	}
 
 	a = atoi(argv[1]);
@@ -24,5 +25,5 @@ int main(int argc, char **argv)
 	{
 		printf("%d\n", produce);
 	}
-	return (0);
+	return (b);
 }
