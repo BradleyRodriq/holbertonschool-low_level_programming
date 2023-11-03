@@ -12,16 +12,16 @@ int main(int argc, char **argv)
 	int a;
 	int b;
 
-	if (argc <= 3)
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	else
-	a = atoi(argv[1]);
-	b = atoi(argv[2]);
-	produce = a * b;
+	else if (argc == 3)
 	{
+		a = atoi(argv[1]);
+		b = atoi(argv[2]);
+		produce = a * b;
 		printf("%d\n", produce);
 	}
 	return (0);
