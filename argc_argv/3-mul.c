@@ -11,12 +11,11 @@ int main(int argc, char **argv)
 	int produce;
 	int a;
 	int b;
-	int x = 0;
 
-	if (argc != 3)
+	if (argc <= 3)
 	{
 		printf("Error\n");
-		x = 1;
+		return (1);
 	}
 	else
 	a = atoi(argv[1]);
@@ -25,5 +24,5 @@ int main(int argc, char **argv)
 	{
 		printf("%d\n", produce);
 	}
-	return (x);
+	return (0);
 }
