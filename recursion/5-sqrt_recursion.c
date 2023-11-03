@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * sqrt2 - helper function to find square root
+ * _sqrt - helper function to find square root
  * @a: same value as n
  * @b: number that iterates from 1 to n
  *
