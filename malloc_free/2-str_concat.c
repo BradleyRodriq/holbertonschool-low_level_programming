@@ -20,11 +20,11 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = " ";
 	}
-	for (i = 0; s1[i] || s2 [i]; i++)
+	for (i = 0; s1[i] || s2[i]; i++)
 	{
 		l++;
 	}
-	concat_str = malloc(sizeof(char) * l + 1);
+	concat_str = malloc(sizeof(char) * l);
 	if (concat_str == NULL)
 	{
 		return (NULL);
