@@ -1,6 +1,11 @@
 #include "main.h"
 #include <stdlib.h>
+
 /**
+ * str_concat - concatenates two strings
+ * @s1: the string to be added to
+ * @s2: the string to add to s1
+ * Return: the concatenated string or NULL if fails
  */
 char *str_concat(char *s1, char *s2)
 {
@@ -19,11 +24,11 @@ char *str_concat(char *s1, char *s2)
 	{
 		l++;
 	}
-	for (i = 0; s2 [i]; i++)
+	for (i = 0; s2[i]; i++)
 	{
 		l++;
 	}
-	concat_str = malloc(sizeof(char) * l);
+	concat_str = malloc(sizeof(char) * l + 1);
 	if (concat_str == NULL)
 	{
 		return (NULL);
