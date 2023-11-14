@@ -45,9 +45,9 @@ char *_strncpy(char *dest, char *src, int n)
 
 /**
  * new_dog - create new dog
- * @name - new dog name
- * @age - new dog age
- * @owner - new dog owner
+ * @name: new dog name
+ * @age: new dog age
+ * @owner: new dog owner
  *
  * Return: new dog
  */
@@ -62,14 +62,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (ndog == NULL)
 		return (NULL);
 
-	ndog->name = malloc(sizeof(char*) * *name);
+	ndog->name = malloc(sizeof(char *) * *name);
 	if (ndog->name == NULL)
 	{
 		free(ndog);
 		return (NULL);
 	}
 
-	ndog->owner = malloc(sizeof(char*) * *owner);
+	ndog->owner = malloc(sizeof(char *) * *owner);
 	if (ndog->owner == NULL)
 	{
 		free(ndog->name);
