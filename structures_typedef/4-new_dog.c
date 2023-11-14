@@ -2,6 +2,22 @@
 #include <stdlib.h>
 
 /**
+ *_strlen - prints the length of a string
+ *@s: string to be counted
+ *Return: length of string
+ */
+int _strlen(char *s)
+
+
+{
+	int i = 0;
+
+	while (s[i] != '\0')
+		i++;
+	return (i);
+}
+
+/**
  * _strncpy - a function ...
  * @dest: the chaine
  * @src: the chaine
@@ -9,10 +25,9 @@
  *
  * Return: 1 or 0
  */
-
-char	*_strncpy(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
-	int	i;
+	int i;
 
 	i = 0;
 	while (i < n && src[i])
