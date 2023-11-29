@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
+#include <limits.h>
 #include <unistd.h>
 
 /**
@@ -25,8 +26,7 @@ size_t print_list(const list_t *h)
 	}
 	while (current != NULL)
 	{
-		if (current->len > 0)
-
+		if (current->len > 0 && current->len <= INT_MAX)
 		{
 			printf("[%d] ", current->len);
 
