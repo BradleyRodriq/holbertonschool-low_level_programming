@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * add_node - adds a node to the beginning of a linked list
+ * @head: pointer to the head of the list_t
+ * @str: the string to be added to the list_t
+ * Return: if the function fails, return NULL,
+ * Otherwise - returns the address of the new element
+ */
 list_t *add_node(list_t **head, const char *str)
 {
 	char *dupe;
