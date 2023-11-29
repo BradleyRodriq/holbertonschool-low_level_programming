@@ -25,21 +25,25 @@ size_t print_list(const list_t *h)
 	}
 	while (current != NULL)
 	{
-		printf("[%d] ", current->len);
-		if (current->str != NULL)
+		if (current->len > 0)
+
 		{
-			if (i < current->len)
+			printf("[%d] ", current->len);
+
+			if (current->str != NULL)
 			{
-				printf("%s\n", current->str);
+				if (i < current->len)
+				{
+					printf("%s\n", current->str);
+				}
+				else
+				{
+					printf("(nil)\n");
+				}
 			}
-			else
-			{
-				printf("(nil)\n");
-			}
+			current = current->next;
+			count++;
 		}
-		current = current->next;
-		count++;
 	}
 	return (count);
 }
-
