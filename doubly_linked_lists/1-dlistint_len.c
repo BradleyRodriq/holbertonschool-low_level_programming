@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * list_len - lists number of elements
+ * dlistint_len - lists number of elements
  * @h: input to be checked
  * Return: number of elements
  */
