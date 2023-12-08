@@ -26,7 +26,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		l++;
 	}
 	nconcat = malloc(sizeof(char) * l - 6);
-	if (nconcat == NULL)
+if (nconcat == NULL)
 	{
 		return (NULL);
 	}
