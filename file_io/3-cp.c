@@ -5,7 +5,7 @@
 int main(int argc, char *argv[])
 {
 	int from, to, r, w;
-	char *buffer;
+	char *buffer[1024];
 
 	if (argc != 3)
 	{
@@ -31,10 +31,10 @@ int main(int argc, char *argv[])
 		w = write(to, buffer, r);
 		if (w == -1)
 		{
-			dprintf("Error: Can't write to %s\n", argv[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
 		}
-
+	}
 	close(from);
 	close(to);
 
