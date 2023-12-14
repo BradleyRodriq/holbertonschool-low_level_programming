@@ -1,16 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int ac, char **av)
+int main(void)
 {
-	char **arguments = av;
-	(void) ac;
-
-	while (*arguments != NULL)
+	while (1)
 	{
-		printf("%s ", *arguments);
-		arguments++;
+		printf("$ ");
+
+		char input [100];
+
+		if (fgets(input, sizeof(input), stdin) == NULL)
+		{
+			break;
+		}
+		printf("%s", input);
 	}
-	printf("\n");
 	return (0);
 }
